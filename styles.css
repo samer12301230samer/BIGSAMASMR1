@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+.chat-window {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(255, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 255, 0, 0.7));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+h2 {
+    text-align: center;
+    color: #fff; /* لون النص في العنوان */
+}
+
+.messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.4); /* لون الخلفية مع شفافية */
+}
+
+input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
